@@ -1,0 +1,10 @@
+{
+    "workbench.editor.autoLockGroups": {
+        "default": true,
+        "workbench.input.interactive": true,
+        "interactive": true
+    },
+    "diffEditor.maxFileSize": 0,
+    "editor.minimap.maxColumn": 1200,
+    "git.autofetch": "all"
+}
