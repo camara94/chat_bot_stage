@@ -1,0 +1,10 @@
+Voici le menu:
+1. Camonia 4TND
+2. chawarman 5TND
+3. sandwich 3.5TND
+4. pizza 8TND
+5. tarte aux pommes 10TND
+6. salade de fruits 12TND
+7. jus de raisins 1.5TND
+8. tombo 25TND
+9. café au lait 2.5TND
