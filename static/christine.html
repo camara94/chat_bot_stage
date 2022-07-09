@@ -1,0 +1,29 @@
+<head>
+  <link rel="stylesheet" href="Chatroom.css" />
+</head>
+<body>
+  <div class="chat-container"></div>
+  <script src="https://npm-scalableminds.s3.eu-central-1.amazonaws.com/@scalableminds/chatroom@master/dist/Chatroom.js"/></script>
+  <script type="text/javascript">
+    var chatroom = new window.Chatroom({
+      host: "http://localhost:5005",
+      title: "Chat avec Christine",
+      container: document.querySelector(".chat-container"),
+      welcomeMessage: "Bienvenue, je suis **Christine**. Le chatbot de votre café préferé!"
+    });
+    chatroom.openChat();
+    let imageURL =  'C:/Users/Christine Gnama/chat_bot_stage/static/images/bot.jpg';
+    let image = document.createElement('img');
+    image.alt='image du bot';
+    image.src=imageURL;
+    image.setAttribute("id", "image")
+    image.style.width="60px";
+    image.style.heigth="60px";
+    image.style.borderRadius="60px";
+    let h3 = document.querySelector('h3');
+    h3.innerText='';
+    h3.appendChild(image)
+    let titre = document.createTextNode(" McZen Rasa et Spacy")
+    document.querySelector('h3').appendChild(titre)
+  </script>
+</body>
