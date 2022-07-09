@@ -1,0 +1,56 @@
+version: "3.2.2"
+
+slots:
+  menu:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: custom
+  reponse:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: custom
+entities: 
+  - menu
+  - reponse
+
+actions:
+  - action_afficher_menu
+  - action_selectionner_menu
+  - action_demande_confirmation
+  - action_valider_confirmation
+ 
+
+intents:
+  - saluer
+  - demander_menu
+  - Aurevoir
+  - plaintes
+  - details_plaintes
+  - selectionner_menu:
+      use_entities: 
+        - menu
+  - valider_confirmation:
+      use_entities: 
+        - reponse
+        - menu
+  - bot_challenge
+
+responses:
+  utter_saluer:
+  - text: "Salut! Que puis-je faire pour vous ?."
+    image: C:/Users/damaro/chat_bot_stage/static/images/restaurant.jpg
+  utter_Aurevoir:
+  - text: "Merci et Aurevoir à la prochaine."
+    image: C:/Users/damaro/chat_bot_stage/static/images/aurevoir.jpg
+  utter_plaintes:
+  - text: "s'il vous plait pouvez-vous me dire ce qui ne va pas?"
+  utter_details_plaintes:
+  - text: "oh! desolé ça ne se reproduira plus."
+  utter_bot_challenge:
+  - text: "je suis un bot propulsé par rasa."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
