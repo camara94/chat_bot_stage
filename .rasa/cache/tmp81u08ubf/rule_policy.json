@@ -1,0 +1,31 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Aurevoir\"}}]": "utter_Aurevoir",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Aurevoir\"}}, {\"prev_action\": {\"action_name\": \"utter_Aurevoir\"}, \"user\": {\"intent\": \"Aurevoir\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"details_plaintes\"}}]": "utter_details_plaintes",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"details_plaintes\"}}, {\"prev_action\": {\"action_name\": \"utter_details_plaintes\"}, \"user\": {\"intent\": \"details_plaintes\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bot_challenge\"}}]": "utter_bot_challenge",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bot_challenge\"}}, {\"prev_action\": {\"action_name\": \"utter_bot_challenge\"}, \"user\": {\"intent\": \"bot_challenge\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"valider_confirmation\"}}]": "action_valider_confirmation",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"valider_confirmation\"}}, {\"prev_action\": {\"action_name\": \"action_valider_confirmation\"}, \"user\": {\"intent\": \"valider_confirmation\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"demander_menu\"}}]": "action_afficher_menu",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"demander_menu\"}}, {\"prev_action\": {\"action_name\": \"action_afficher_menu\"}, \"user\": {\"intent\": \"demander_menu\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"selectionner_menu\"}}]": "action_selectionner_menu",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"selectionner_menu\"}}, {\"prev_action\": {\"action_name\": \"action_selectionner_menu\"}, \"user\": {\"intent\": \"selectionner_menu\"}}]": "action_demande_confirmation",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"selectionner_menu\"}}, {\"prev_action\": {\"action_name\": \"action_selectionner_menu\"}, \"user\": {\"intent\": \"selectionner_menu\"}}, {\"prev_action\": {\"action_name\": \"action_demande_confirmation\"}, \"user\": {\"intent\": \"selectionner_menu\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"saluer\"}}]": "utter_saluer",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"saluer\"}}, {\"prev_action\": {\"action_name\": \"utter_saluer\"}, \"user\": {\"intent\": \"saluer\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"plaintes\"}}]": "utter_plaintes",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"plaintes\"}}, {\"prev_action\": {\"action_name\": \"utter_plaintes\"}, \"user\": {\"intent\": \"plaintes\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "predicting default action with intent session_start",
+      "predicting default action with intent back",
+      "predicting default action with intent restart"
+    ]
+  }
+}
