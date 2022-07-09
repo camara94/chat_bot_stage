@@ -1,0 +1,47 @@
+version: "3.2.2"
+
+rules:
+
+- rule: saluer quelqu'un
+  steps:
+  - intent: saluer
+  - action: utter_saluer
+
+- rule: decouvrir ce que l'utilisateur veut
+  steps:
+  - intent: demander_menu
+  - action: action_afficher_menu
+
+- rule: Dire aurevoir à l'utilisateur
+  steps:
+  - intent: Aurevoir
+  - action: utter_Aurevoir
+
+- rule: les plaintes
+  steps:
+  - intent: plaintes
+  - action: utter_plaintes
+
+- rule: details_plaintes
+  steps:
+  - intent: details_plaintes
+  - action: utter_details_plaintes
+
+- rule: gerer le menu de l'utilisateur
+  steps:
+  - intent: selectionner_menu
+  - action: action_selectionner_menu
+  - action: action_demande_confirmation
+- rule: confirmer la commande
+  steps: 
+  - intent: valider_confirmation
+  - action: action_valider_confirmation
+- rule: reponse à un bot
+  steps:
+  - intent: bot_challenge
+  - action: utter_bot_challenge
+  
+    
+  
+  
+
