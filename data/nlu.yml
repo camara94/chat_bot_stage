@@ -1,0 +1,76 @@
+version: "3.2.2"
+
+nlu:
+- intent: saluer
+  examples: |
+    - salut
+    - bonjour
+    - bonsoir
+    - Allô
+    - Allo
+    - puis-je parler avec quelqu'un?
+    - serveur
+    - hello
+
+- intent: demander_menu
+  examples: |
+    - puis-je avoir votre menu?
+    - menu
+    - s'il vous plait votre menu
+    - c'est quoi votre menu du jour?
+    - qu'est ce que vous proposez comme menu?
+    - le menu s'il vous plait
+    - je peux avoir le menu?
+    - Avez-vous ?
+- intent: Aurevoir
+  examples: |
+    - à plus tard
+    - bonne après-midi
+    - bonne journée
+    - aurevoir
+    - à un de ces quatre
+    - à bientôt
+    - merci
+    - bye
+     
+- intent: plaintes
+  examples: |
+    - la nourriture etait mauvaise
+    - mauvaise qualité
+    - c'etait mauvais
+    - il y avait une mouche dedans 
+    - terrible
+    - pas propre
+    - je ne commanderai plus
+    - je suis deçu
+    - pas bon
+    - pas très bon 
+- intent: details_plaintes
+  examples: |
+     - parceque il y avait beaucoup 
+     - vous manquez de competences
+     - je n'ai pas apprecié
+     - la qualité
+- intent: selectionner_menu
+  examples: |
+    - 1 2  3 4
+    - 1, 2, 3 
+
+- intent: valider_confirmation
+  examples: |
+    - [oui](reponse)
+    - [Oui](reponse)
+    - [non](reponse)
+    - [Non](reponse)
+    - [O](reponse)
+    - [N](reponse)
+    - [o](reponse)
+    - [n](reponse)
+   
+- intent: bot_challenge
+  examples : |
+    - Etes-vous un robot?
+    - Êtes-vous un être humain?
+    - est-ce que je parle à un bot ?
+    - Est-ce que je parle à un humain ?
+     
