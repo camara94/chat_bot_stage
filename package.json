@@ -1,0 +1,31 @@
+{
+  "name": "chat_bot_stage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./static/index.html",
+  "dependencies": {
+    "@scalableminds/chatroom": "^0.7.8",
+    "rasa-webchat": "^1.0.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.18.6",
+    "@babel/core": "^7.18.6",
+    "@babel/node": "^7.18.6",
+    "@babel/preset-env": "^7.18.6"
+  },
+  "scripts": {
+    "build": "babel src -d lib",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/camara94/chat_bot_stage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/camara94/chat_bot_stage/issues"
+  },
+  "homepage": "https://github.com/camara94/chat_bot_stage#readme"
+}
