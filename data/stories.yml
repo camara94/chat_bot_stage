@@ -1,0 +1,50 @@
+version: "3.2.2"
+
+stories:
+
+- story: saluer path 1
+  steps:
+  - intent: saluer
+  - action: utter_saluer
+
+
+- story: Dire aurevoir path 2
+  steps:
+  - intent: Aurevoir
+  - action: utter_Aurevoir
+
+
+- story: plaintes
+  steps:
+  - intent: plaintes
+  - action: utter_plaintes
+  
+- story: details_plaintes path 3
+  steps:
+  - intent: details_plaintes
+  - action: utter_details_plaintes
+
+- story: demander le menu path 4
+  steps:
+  - intent: demander_menu
+  - action: action_afficher_menu
+
+- story: gerer_menu path 5
+  steps:
+  - intent: selectionner_menu
+  - action: action_selectionner_menu
+  - action: action_demande_confirmation
+
+- story: confirmer la commande path 6
+  steps: 
+  - intent: valider_confirmation
+  - action: action_valider_confirmation
+- story: reponse à un bot_challenge path 7
+  steps:
+  - intent: bot_challenge
+  - action: utter_bot_challenge
+  
+
+
+ 
+
